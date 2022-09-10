@@ -1,10 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Home from './pages/home'
-import MenuBebidas from './pages/menuBebidas'
-import MenuDestacados from './pages/menuDestacados'
-import MenuPlatos from './pages/menuPlatos'
-import MenuPostres from './pages/menuPostres'
-import Reserva from './pages/reserva'
+import { Footer } from "./components/index"
+import { Home, MenuBebidas, MenuDestacados, MenuPlatos, MenuPostres, Reserva } from './pages/index'
+
+//Bootstrap
+import 'bootstrap/dist/css/bootstrap.css'
 
 function App() {
   return (
@@ -22,6 +21,7 @@ function App() {
           <Route path='*' element={<h1>Page not found</h1>} />
         </Routes>
       </BrowserRouter>
+      <Footer/>
     </>
   );
 }

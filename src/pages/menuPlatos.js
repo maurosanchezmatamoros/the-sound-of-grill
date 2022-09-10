@@ -1,8 +1,6 @@
-const MenuPlatos = () => {
+export const MenuPlatos = () => {
     return(
         <>
         </>
     )
 }
-
-export default MenuPlatos
