@@ -1,8 +1,6 @@
-const MenuPostres = () => {
+export const MenuPostres = () => {
     return(
         <>
         </>
     )
 }
-
-export default MenuPostres

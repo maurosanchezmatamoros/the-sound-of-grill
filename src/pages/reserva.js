@@ -1,8 +1,6 @@
-const Reserva = () => {
+export const Reserva = () => {
     return(
         <>
         </>
     )
 }
-
-export default Reserva

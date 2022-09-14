@@ -1,8 +1,6 @@
-const MenuBebidas = () => {
+export const MenuBebidas = () => {
     return(
         <>
         </>
     )
 }
-
-export default MenuBebidas
