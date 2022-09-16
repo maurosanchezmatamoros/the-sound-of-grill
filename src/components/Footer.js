@@ -1,4 +1,3 @@
-import React from "react"
 import { Container, Row, Col } from 'react-bootstrap'
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import Swal from "sweetalert2"
