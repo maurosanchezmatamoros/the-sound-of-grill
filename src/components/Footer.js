@@ -1,4 +1,3 @@
-import React from "react"
 import { Container, Row, Col } from 'react-bootstrap'
 //styles
 import "../styles/footer.css"
@@ -11,7 +10,7 @@ export const Footer = () => {
 
     return (
         <>
-            <Container className="footer">
+            <Container fluid className="footer">
                 <Row className="p-5">
                     <Col md={4} sm={12} className="footer-section1 p-3">
                         <div >

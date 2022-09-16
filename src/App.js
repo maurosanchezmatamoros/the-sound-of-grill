@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { Footer } from "./components/index"
 import { Home, MenuBebidas, MenuDestacados, MenuPlatos, MenuPostres, Reserva } from './pages/index'
 
 //Bootstrap
@@ -19,7 +18,6 @@ function App() {
           <Route path='*' element={<h1>Page not found</h1>} />
         </Routes>
       </BrowserRouter>
-      <Footer/>
     </>
   );
 }

@@ -1,13 +1,13 @@
 import TheSoundOfGrill from "./icons/TheSoundOfGrill"
-import '../styles/Navbar.css'
+import '../styles/NavbarMenu.css'
 import { useState } from "react"
 
-const Navbar = () => {
+export const Navbar = () => {
 
     const [displayMenu, setDisplayMenu] = useState(false)
 
     return(
-        <nav className="navbar">
+        <nav className="navbarMenu">
             <TheSoundOfGrill fill={'#fff'}/>
             <ul className='menu'>
                 <li className="menuItem">Inicio</li>
@@ -27,5 +27,3 @@ const Navbar = () => {
         </nav>
     )
 }
-
-export default Navbar
