@@ -9,8 +9,6 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <header>
-        </header>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/menuBebidas' element={<MenuBebidas />} />
