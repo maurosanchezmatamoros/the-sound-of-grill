@@ -1,12 +1,11 @@
 .footer {
     font-family: Poppins;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 29px;
     letter-spacing: 0px;
     text-align: left;
     background-color: #1C1C1C;
-    
 }
 
 .logo g{
@@ -32,7 +31,7 @@
 .footer-info{
     height: 50px;
     color: #C6C6C6;
-    font-size: 1.2rem;
+    font-size: 1rem;
     background-color: #161616;
 }
 
@@ -40,22 +39,28 @@
     margin: 0;
 }
 
-/* dl { 
-    width: 100% 
-} */
+dl { 
+    width: 100%;
+}
 dt { 
+    width: auto;
+    min-width: 50%;
+    max-width: 60%;
     float: left;
-    width: 40%;
     overflow: hidden; 
     white-space: nowrap 
 }
+
+
 dd {
-    width: 35%; 
+    width: auto;
     float: left;  
     overflow: hidden;
 }
 
-dt:after { content: " .................................................... " }
+dt:after { 
+    content: "............................................................................................";
+}
 
 .footer button{
     background-color: transparent;
@@ -67,32 +72,32 @@ dt:after { content: " .................................................... " }
 .swal2-popup {
     font-size: 12px !important;
     color:#777777;
-  }
+}
 
-  .hovertext {
+.hovertext {
     position: relative;
-    
-  }
+
+}
   
-  .hovertext:before {
+.hovertext:before {
     content: attr(data-hover);
     visibility: hidden;
     opacity: 0;
     width: max-content;
     background-color: #161616;
-    color: #777777;
+    color: #FFFFFF;
     text-align: center;
     border-radius: 5px;
     padding: 8px;
     transition: opacity 1s ease-in-out;
-  
+
     position: absolute;
     z-index: 1;
-    left: 0;
-    top: 120%;
-  }
+    left: 30%;
+    top:140%;
+}
   
-  .hovertext:hover:before {
+.hovertext:hover:before {
     opacity: 1;
     visibility: visible;
-  }
+}
