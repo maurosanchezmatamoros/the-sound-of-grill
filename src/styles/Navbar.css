@@ -1,0 +1,53 @@
+.navbar{
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+
+}
+
+.menuItem{
+    position: relative;
+    margin: 0 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.menuItem:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.menuButton{
+    transform: rotate(90deg);
+}
+
+.reservar{
+    background-color: rgba(204, 157, 47, 1);
+    padding: 5px 10px;
+}
+
+.dropMenu{
+    position: absolute;
+    background-color: rgba(28, 28, 28, 1);
+    top: 36px;
+    left: -20px;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.dropMenu li{
+    padding: 10px 0;
+}
+
+.dropMenu li:hover{
+    opacity: 0.8;
+}

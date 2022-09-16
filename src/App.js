@@ -1,17 +1,15 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Home from './pages/home'
-import MenuBebidas from './pages/menuBebidas'
-import MenuDestacados from './pages/menuDestacados'
-import MenuPlatos from './pages/menuPlatos'
-import MenuPostres from './pages/menuPostres'
-import Reserva from './pages/reserva'
+import Home from './pages/Home'
+import MenuBebidas from './pages/MenuBebidas'
+import MenuDestacados from './pages/MenuDestacados'
+import MenuPlatos from './pages/MenuPlatos'
+import MenuPostres from './pages/MenuPostres'
+import Reserva from './pages/Reserva'
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        <header>
-        </header>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/menuBebidas' element={<MenuBebidas />} />
