@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar"
 import '../styles/Home.css'
 
-const Home = () => {
+export const Home = () => {
     return(
         <header style={{ backgroundImage: `url(/assets/images/fondoHome.png)` }}>
             <Navbar />
@@ -13,5 +13,3 @@ const Home = () => {
         </header>
     )
 }
-
-export default Home

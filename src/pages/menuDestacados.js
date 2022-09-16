@@ -1,8 +1,6 @@
-const MenuDestacados = () => {
+export const MenuDestacados = () => {
     return(
         <>
         </>
     )
 }
-
-export default MenuDestacados
