@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { Home, MenuBebidas, MenuDestacados, MenuPlatos, MenuPostres, Reserva } from './pages/index'
+import { Home, MenuBebidas, MenuDestacados, MenuPlatos, MenuPostres, Reserva } from './pages/'
 
 //Bootstrap
 import 'bootstrap/dist/css/bootstrap.css'
