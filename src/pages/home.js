@@ -1,4 +1,4 @@
-import { Navbar, Footer } from "../components/index"
+import { Navbar, Footer, Historia } from "../components/index"
 import '../styles/Home.css'
 
 export const Home = () => {
@@ -12,6 +12,7 @@ export const Home = () => {
                     <button className="homeButton">VER MENÚ</button>
                 </div>
             </header>
+            <Historia />
             <Footer />
         </>
     )
