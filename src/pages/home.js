@@ -1,4 +1,4 @@
-import { Navbar, Footer, Historia, Menu, Carrousel } from "../components/index"
+import { Navbar, Footer, Historia, Menu, Carrousel, TheSog } from "../components/index"
 import '../styles/Home.css'
 
 export const Home = () => {
@@ -15,6 +15,7 @@ export const Home = () => {
             <Historia />
             <Menu />
             <Carrousel />
+            <TheSog />
             <Footer />
         </>
     )

@@ -1,0 +1,54 @@
+.theSog{
+    height: 1228px;
+    width: 100%;
+    background-color: #E9E9E9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.theSogContainer{
+    width: 1040px;
+    height: 883px;
+}
+
+.theSogHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.theSogHeaderTitle{
+    display: flex;
+    flex-direction: column;
+}
+
+.theSogHeader h4{
+    color: #CC9D2F;
+    font-size: 14px;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+}
+
+.theSogHeader h3{
+    font-family: 'Cinzel';
+    font-size: 56px;
+    color: #1C1C1C;
+    margin-bottom: 2rem;
+}
+
+.theSogHeader p{
+    font-family: 'Poppins';
+    font-size: 16px;
+    color: #777777;
+}
+
+.theSogGallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1rem;
+}
+
