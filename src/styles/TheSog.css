@@ -1,5 +1,4 @@
 .theSog{
-    height: 1228px;
     width: 100%;
     background-color: #E9E9E9;
     display: flex;
@@ -9,11 +8,13 @@
 }
 
 .theSogContainer{
-    width: 1040px;
-    height: 883px;
+    padding: 10rem;
+    width: 100%;
+    height: 100%;
 }
 
 .theSogHeader{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,9 +47,44 @@
 }
 
 .theSogGallery{
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 1rem;
 }
 
+.theSogGallery img{
+    width: 100%;
+}
+
+@media screen and (max-width: 1000px){
+    .theSogContainer{
+        padding: 5rem 0 5rem 0;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 840px){
+    .theSogGallery{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 720px){
+    .theSogHeader{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .theSogHeader p{
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .theSogGallery{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
