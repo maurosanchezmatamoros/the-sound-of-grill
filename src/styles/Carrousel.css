@@ -1,6 +1,6 @@
 .carouselContainer{
     width: 100%;
-    height: 558px;
+    min-height: 558px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,7 +11,7 @@
 }
 
 .carouselCommentContainer{
-    width: 688px;
+    max-width: 688px;
     height: 329px;
     background-color: #E9E9E9;
     display: flex;
@@ -33,4 +33,19 @@
     font-size: 18px;
     padding: 0 48px;
     text-align: center;
+}
+
+@media screen and (max-width: 840px){
+    .carousel{
+        padding: 0 2rem;
+    }
+    .carouselCommentContainer h4{
+        font-size: 16px;
+    }
+    .carouselCommentContainer h6{
+        font-size: 12px;
+    }
+    .carouselCommentContainer p{
+        font-size: 14px;
+    }
 }
