@@ -1,6 +1,6 @@
 export { Home } from "./home"
 export { MenuBebidas } from "./menuBebidas"
-export { MenuDestacados } from "./menuDestacados"
+export { MenuList } from "./menuList"
 export { MenuPlatos} from "./menuPlatos"
 export { MenuPostres } from "./menuPostres"
 export { Reserva } from "./reserva"

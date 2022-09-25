@@ -1,0 +1,23 @@
+.card{
+    font-family: 'Poppins' !important;
+    font-style: normal !important;
+}
+
+.card-title{
+    font-size: 20px !important;
+    color: #474747;
+}
+
+.card-text{
+    font-size: 14px !important;
+    color: #989898;
+}
+
+.item--card{
+    border: 1px solid rgba(0, 0, 0, 0.12) !important;
+    border-radius: 0 !important;
+}
+
+.card-img-top {
+    border-radius: 0 !important;
+  }
