@@ -1,5 +1,6 @@
 import '../styles/Menu.css'
 import { Line } from './icons/Line'
+import { Link } from "react-router-dom"
 
 export const Menu = () => {
     return(
@@ -14,13 +15,13 @@ export const Menu = () => {
                 </div>
                 <div className='menuLinks'>
                     <div className='menuCards' style={{ backgroundImage: `url(/assets/images/platos.png)` }}>
-                        <button className='menuCardsButton'>platos</button>
+                        <Link to={`/menu/platos`}><button className='menuCardsButton'>platos</button></Link>
                     </div>
                     <div className='menuCards' style={{ backgroundImage: `url(/assets/images/postres.png)` }}>
-                        <button className='menuCardsButton'>postres</button>
+                    <Link to={`/menu/postres`}><button className='menuCardsButton'>postres</button></Link>
                     </div>
                     <div className='menuCards' style={{ backgroundImage: `url(/assets/images/bebidas.jpg)` }}>
-                        <button className='menuCardsButton'>bebidas</button>
+                    <Link to={`/menu/bebidas`}><button className='menuCardsButton'>bebidas</button></Link>
                     </div>
                 </div>
             </div>
