@@ -48,3 +48,23 @@ header{
     margin-top: 62px;
 }
 
+@media screen and (max-width: 800px){
+    .homeTitle{
+        font-size: 60px;
+        padding: 0 2rem;
+    }
+    .homeSubTitle{
+        padding: 0 3rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .homeTitle{
+        font-size: 50px;
+        padding: 0 2rem;
+    }
+    .homeSubTitle{
+        padding: 0 3rem;
+    }
+}
+

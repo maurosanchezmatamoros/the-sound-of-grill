@@ -5,9 +5,19 @@ import { useState } from "react"
 export const Navbar = () => {
 
     const [displayMenu, setDisplayMenu] = useState(false)
+    const [navbarBack, setNavbarBack] = useState(false)
+
+    const handleScroll = () => {
+        window.scrollY > 50?
+        setNavbarBack(true)
+        :
+        setNavbarBack(false)
+    }
+
+    window.addEventListener("scroll", handleScroll)
 
     return(
-        <nav className="navbarMenu">
+        <nav className={navbarBack? "navbarMenu navbarBack" : "navbarMenu"}>
             <TheSoundOfGrill fill={'#fff'}/>
             <ul className='menu'>
                 <li className="menuItem">Inicio</li>

@@ -1,7 +1,8 @@
-import { Navbar, Footer, Historia, Menu, Carrousel } from "../components/index"
+import { Navbar, Footer, Historia, Menu, Carrousel, TheSog } from "../components/index"
 import '../styles/Home.css'
 
 export const Home = () => {
+
     return(
         <>
             <header style={{ backgroundImage: `url(/assets/images/fondoHome.png)` }}>
@@ -15,6 +16,7 @@ export const Home = () => {
             <Historia />
             <Menu />
             <Carrousel />
+            <TheSog />
             <Footer />
         </>
     )
