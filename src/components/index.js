@@ -6,5 +6,5 @@ export { Carrousel } from "./Carrousel"
 export { TheSog } from "./TheSog"
 export { Item } from "./Item"
 export { Loader } from "./Loader"
-export { Carrousel } from "./Carrousel"
+
 
