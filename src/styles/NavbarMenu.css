@@ -1,3 +1,7 @@
+#logoHome:hover{
+    cursor: pointer
+}
+
 .navbarMenu{
     height: 60px;
     display: flex;
@@ -32,6 +36,11 @@
     margin: 0 1rem;
     display: flex;
     align-items: center;
+    color: #fff;
+}
+
+.menuItem a{
+    color: #fff;
 }
 
 .menuItem:hover{
