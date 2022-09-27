@@ -3,7 +3,7 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 import Swal from "sweetalert2"
 
 //styles
-import "../styles/footer.css"
+import "../styles/Footer.css"
 //icons
 import { MdMailOutline, MdCall, MdLocationOn } from "react-icons/md"
 import { ReactComponent as Logo } from "../img/logo.svg"
@@ -14,7 +14,7 @@ export const Footer = () => {
     
     return (
         <>
-            <Container fluid className="footer">
+            <Container fluid className="footer" id='contacto'>
                 <Row className="p-5">
                     <Col md={4} sm={12} className="footer-section1 px-5 py-4">
                         <div >

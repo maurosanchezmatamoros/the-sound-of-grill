@@ -3,7 +3,7 @@ import { Line } from './icons/Line'
 
 export const Historia = () => {
     return(
-        <section className='historiaSection'>
+        <section className='historiaSection' id='conocenos'>
             <div className="historiaImgContainer">
                 <div className="historiaImgContainerBlock">
                     <img id='historiaTragos' src="./assets/images/historiaTragos.jpg" alt="tragos"></img>

@@ -1,33 +1,35 @@
 import { useEffect, useState} from "react"
-import { Navbar, Footer, Loader } from "../components"
+import { Loader } from "."
 import MenuItemList from "../containers/MenuItemList"
-import { useParams } from "react-router-dom"
 import { Row } from 'react-bootstrap'
-import { menuItems } from "../menuItems"
+import { menuItems } from "../data/menuItems"
 import Swal from "sweetalert2"
 import "../styles/MenuList.css"
 
 
-export const MenuList = () => {
+export const MenuList = ({ category }) => {
     
 
     const [menu, setMenu] = useState([])
     const [loading, setLoading] = useState(true)
     const [error, setError] = useState(false)
-    const { category } = useParams()
 
     useEffect(() => {
         const getItems = async () => {
             try {
-                
                 const itemsFiltered = menuItems.filter(
                     (element) => element.category === category
                 )
-                
                 if (itemsFiltered.length > 0) {
                     setMenu(itemsFiltered)
                 }
-                else { 
+                else if (category === 'destacados') {
+                    const itemsDestacados = menuItems.filter(
+                        (element) => element.destacado === true
+                    )
+                    setMenu(itemsDestacados)
+                }
+                else{ 
                     Swal.fire({
                     title: 'No products in the selected category',
                     icon: 'error',
@@ -42,22 +44,14 @@ export const MenuList = () => {
             finally {
                 setTimeout(() => {
                     setLoading(false)
-                    }, 1500)
+                }, 1500)
             }
         }
         getItems()
     }, [category])
 
     return(
-        <>
-        <header style={{ backgroundImage: `url(/assets/images/fondoHome.png)` }}>
-            <Navbar/>
-            <div className="homeMainText">
-                <h2 className="homeTitle">CONOCE EL MENÚ</h2>
-                <h3 className="homeSubTitle">The Sound Of Grill</h3>
-            </div>
-        </header>
-        <section>
+        <section id='menu'>
             <Row className="p-5 justify-content-center">
             {
             loading ? (
@@ -72,7 +66,5 @@ export const MenuList = () => {
             }
             </Row>
         </section>
-        <Footer/>
-        </>
     )
 }
