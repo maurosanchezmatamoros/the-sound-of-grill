@@ -6,7 +6,7 @@ export const menuItems = [
         name: "Carne asada y pechuga dobada",
         price: "$295",        
         img: "../assets/images/menu/platos01.png",
-        destacado: true,
+        destacados: true,
     },
     {
         id: 2,
@@ -15,7 +15,7 @@ export const menuItems = [
         name: "Arrachera y pechuga adobada",
         price: "$385",        
         img: "../assets/images/menu/platos02.png",
-        destacado: true,
+        destacados: true,
     },
     {
         id: 3,
@@ -24,7 +24,7 @@ export const menuItems = [
         name: "Picaña en costra de rub de café",
         price: "$450",        
         img: "../assets/images/menu/platos03.png",
-        destacado: true,
+        destacados: true,
     },
     {
         id: 4,
@@ -33,7 +33,7 @@ export const menuItems = [
         name: "Pechuga adobada",
         price: "$235",        
         img: "../assets/images/menu/platos04.png",
-        destacado: false,
+        destacados: false,
     },
     {
         id: 5,
@@ -42,7 +42,7 @@ export const menuItems = [
         name: "Arrachera",
         price: "$435",        
         img: "../assets/images/menu/platos05.png",
-        destacado: false,
+        destacados: false,
     },
     {
         id: 6,
@@ -51,7 +51,7 @@ export const menuItems = [
         name: "Arrachera",
         price: "$395",        
         img: "../assets/images/menu/platos06.png",
-        destacado: false,
+        destacados: false,
     },
     {
         id: 7,
@@ -60,7 +60,7 @@ export const menuItems = [
         name: "Carne asada",
         price: "$365",        
         img: "../assets/images/menu/platos07.png",
-        destacado: false,
+        destacados: false,
     },
     {
         id: 8,
@@ -69,7 +69,7 @@ export const menuItems = [
         name: "New York con chorizo español",
         price: "$580",        
         img: "../assets/images/menu/platos08.png",
-        destacado: false,
+        destacados: false,
     },
     {
         id: 9,
@@ -78,7 +78,7 @@ export const menuItems = [
         name: "Rib Eye Cowboy en cama de tuétanos",
         price: "$550",        
         img: "../assets/images/menu/platos09.png",
-        destacado: false,
+        destacados: false,
     },
     {
         id: 10,
@@ -87,7 +87,7 @@ export const menuItems = [
         name: "Short Rib con papas al horno",
         price: "$525",        
         img: "../assets/images/menu/platos10.png",
-        destacado: false,
+        destacados: false,
     },
     {
         id: 11,
@@ -96,7 +96,7 @@ export const menuItems = [
         name: "Tropical NG",
         price: "$98",        
         img: "../assets/images/menu/bebidas01.jpg",
-        destacado: true,
+        destacados: true,
     },
     {
         id: 12,
@@ -105,7 +105,7 @@ export const menuItems = [
         name: "Ocean NG",
         price: "$109",        
         img: "../assets/images/menu/bebidas02.png",
-        destacado: true,
+        destacados: true,
     },
     {
         id: 13,
@@ -114,7 +114,7 @@ export const menuItems = [
         name: "Vampiro",
         price: "$89",        
         img: "../assets/images/menu/bebidas03.png",
-        destacado: true,
+        destacados: true,
     },
     {
         id: 14,
@@ -123,7 +123,7 @@ export const menuItems = [
         name: "Mojito Maracuyá",
         price: "$109",        
         img: "../assets/images/menu/bebidas04.png",
-        destacado: false,
+        destacados: false,
     },
     {
         id: 15,
@@ -132,7 +132,7 @@ export const menuItems = [
         name: "Amor Negro",
         price: "$105",        
         img: "../assets/images/menu/bebidas05.png",
-        destacado: false,
+        destacados: false,
     },
     {
         id: 16,
@@ -141,7 +141,7 @@ export const menuItems = [
         name: "Caballero Negro",
         price: "$109",        
         img: "../assets/images/menu/bebidas06.png",
-        destacado: false,
+        destacados: false,
     },
     {
         id: 17,
@@ -150,7 +150,7 @@ export const menuItems = [
         name: "Cerveza: Heineken, Tecate, Indio y otros",
         price: "$45",        
         img: "../assets/images/menu/bebidas07.png",
-        destacado: false,
+        destacados: false,
     },
     {
         id: 18,
@@ -159,7 +159,7 @@ export const menuItems = [
         name: "Cerveza: Amstel Ultra, Strongbow",
         price: "$55",        
         img: "../assets/images/menu/bebidas08.png",
-        destacado: false,
+        destacados: false,
     },
     {
         id: 19,
@@ -168,7 +168,7 @@ export const menuItems = [
         name: "Cerveza: XX Ambar, XX Larger",
         price: "$49",        
         img: "../assets/images/menu/bebidas09.png",
-        destacado: false,
+        destacados: false,
     },
     {
         id: 20,
@@ -177,7 +177,7 @@ export const menuItems = [
         name: "Cerveza artesanal",
         price: "$59",        
         img: "../assets/images/menu/bebidas10.png",
-        destacado: false,
+        destacados: false,
     },
     {
         id: 21,
@@ -186,7 +186,7 @@ export const menuItems = [
         name: "Bebidas",
         price: "Desde $19",        
         img: "../assets/images/menu/bebidas11.png",
-        destacado: false,
+        destacados: false,
     },
     {
         id: 22,
@@ -195,7 +195,7 @@ export const menuItems = [
         name: "Vinos",
         price: "Desde $100",        
         img: "../assets/images/menu/bebidas12.png",
-        destacado: false,
+        destacados: false,
     },
     {
         id: 23,
@@ -204,7 +204,7 @@ export const menuItems = [
         name: "Pan de elote con gloria derretida",
         price: "$95",        
         img: "../assets/images/menu/postres01.png",
-        destacado: true,
+        destacados: true,
     },
     {
         id: 24,
@@ -213,7 +213,7 @@ export const menuItems = [
         name: "Conejo",
         price: "$109",        
         img: "../assets/images/menu/postres02.png",
-        destacado: true,
+        destacados: true,
     },
     {
         id: 25,
@@ -222,7 +222,7 @@ export const menuItems = [
         name: "Cheesecake frutos del bosque",
         price: "$95",        
         img: "../assets/images/menu/postres03.png",
-        destacado: true,
+        destacados: true,
     },
     {
         id: 26,
@@ -231,7 +231,7 @@ export const menuItems = [
         name: "Ferrero",
         price: "$119",        
         img: "../assets/images/menu/postres04.png",
-        destacado: false,
+        destacados: false,
     },
     {
         id: 27,
@@ -240,7 +240,7 @@ export const menuItems = [
         name: "Delicia de chocolate",
         price: "$89",        
         img: "../assets/images/menu/postres05.png",
-        destacado: false,
+        destacados: false,
     },
     {
         id: 28,
@@ -249,7 +249,7 @@ export const menuItems = [
         name: "Licor 43",
         price: "$95",        
         img: "../assets/images/menu/postres06.png",
-        destacado: false,
+        destacados: false,
     },
     {
         id: 29,
@@ -258,7 +258,7 @@ export const menuItems = [
         name: "Flan",
         price: "$85",        
         img: "../assets/images/menu/postres07.png",
-        destacado: false,
+        destacados: false,
     },
     {
         id: 30,
@@ -267,7 +267,7 @@ export const menuItems = [
         name: "Baileys",
         price: "$89",        
         img: "../assets/images/menu/postres08.png",
-        destacado: false,
+        destacados: false,
     },
     {
         id: 31,
@@ -276,6 +276,6 @@ export const menuItems = [
         name: "Brownie",
         price: "$99",        
         img: "../assets/images/menu/postres09.png",
-        destacado: false,
+        destacados: false,
     },
 ]

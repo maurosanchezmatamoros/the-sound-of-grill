@@ -39,7 +39,7 @@ export const Menu = () => {
                     </div>
                 </div>
             </section>
-            <MenuList category={category} />
+            <MenuList category={category} setCategory={setCategory} />
         </>
     )
 }
