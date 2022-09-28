@@ -1,3 +1,53 @@
+.p-5{
+    padding: 10rem !important;
+}
+
 section{
     background: #E9E9E9;
+}
+
+.menuTextContainer{
+    display: grid;
+    grid-template-areas:
+    'title null'
+    'subtitle text';
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.menuTextContainer h4{
+    color: rgba(204, 157, 47, 1);
+    font-size: 14px;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    grid-area: title;
+}
+
+.menuTextContainer h3{
+    font-family: 'Cinzel';
+    font-size: 56px;
+    color: #1C1C1C;
+    margin-bottom: 2rem;
+    grid-area: subtitle;
+}
+
+.menuTextContainer p{
+    align-self: flex-start;
+    margin-top: 16px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    color: #777777;
+    grid-area: text;
+    line-height: 16px;
+}
+
+.menuTabs button{
+    font-size: 18px;
+    color: rgba(119, 119, 119, 0.8);
+    border: none;
+    background: none;
+    margin: 0 1rem 1rem 0;
+    font-family: 'Poppins';
 }
