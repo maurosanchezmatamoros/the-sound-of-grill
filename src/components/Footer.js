@@ -11,7 +11,6 @@ import { ReactComponent as Logo } from "../img/logo.svg"
 
 export const Footer = () => {
 
-    
     return (
         <>
             <Container fluid className="footer" id='contacto'>

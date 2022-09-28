@@ -1,11 +1,9 @@
 import TheSoundOfGrill from "./icons/TheSoundOfGrill"
 import '../styles/NavbarMenu.css'
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
-import Modal from 'react-bootstrap/Modal';
 import { useContext, useState } from "react"
 import { Link } from 'react-scroll'
 import { categoryContext } from "../App"
+import { ModalReserva } from "./Modal"
 
 export const Navbar = () => {
 
@@ -21,17 +19,19 @@ export const Navbar = () => {
     }
 
     window.addEventListener("scroll", handleScroll)
-
-    const [show, setShow] = useState(false)
-    const handleClose = () => setShow(false)
-    const handleShow = () => setShow(true)
       
     const handleOnClick = (cat) => {
         setCategory(cat)
         setDisplayMenu(!displayMenu)
     }
 
+    
+    const handleShow = () => setShow(true);
+    const handleClose = () => setShow(false);
+    const [show, setShow] = useState(false);
+
     return(
+      <>
         <nav className={navbarBack? "navbarMenu navbarBack" : "navbarMenu"}>
             <Link to='inicio' spy={true} smooth={true} offset={-60} duration={100}>
                 <TheSoundOfGrill fill={'#fff'} id='logoHome'/>
@@ -51,39 +51,9 @@ export const Navbar = () => {
                 <Link to="contacto" spy={true} smooth={true} offset={-50} duration={200} ><li className="menuItem">Contacto</li></Link>
                 <li className="menuItem reservar" onClick={handleShow}>RESERVAR</li>
             </ul>
-      
-            <Modal show={show} onHide={handleClose} size="sm">
-              <Modal.Header closeButton>
-                <Modal.Title>Haga su reserva</Modal.Title>
-              </Modal.Header>
-              <Modal.Body>
-                <Form>
-                  <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                    <Form.Label>Email address</Form.Label>
-                    <Form.Control
-                      type="email"
-                      placeholder="name@example.com"
-                      autoFocus
-                    />
-                  </Form.Group>
-                  <Form.Group
-                    className="mb-3"
-                    controlId="exampleForm.ControlTextarea1"
-                  >
-                    <Form.Label>Example textarea</Form.Label>
-                    <Form.Control as="textarea" rows={3} />
-                  </Form.Group>
-                </Form>
-              </Modal.Body>
-              <Modal.Footer>
-                <Button variant="secondary" onClick={handleClose}>
-                  Close
-                </Button>
-                <Button variant="primary" onClick={handleClose}>
-                  Save Changes
-                </Button>
-              </Modal.Footer>
-            </Modal>
+            
         </nav>
+        <ModalReserva isOpen={show} close={handleClose}/>
+      </>
     )
 }
