@@ -5,9 +5,10 @@ import { Row } from 'react-bootstrap'
 import { menuItems } from "../data/menuItems"
 import Swal from "sweetalert2"
 import "../styles/MenuList.css"
+import { Line } from "./icons/Line"
 
 
-export const MenuList = ({ category }) => {
+export const MenuList = ({ category, setCategory }) => {
     
 
     const [menu, setMenu] = useState([])
@@ -25,7 +26,7 @@ export const MenuList = ({ category }) => {
                 }
                 else if (category === 'destacados') {
                     const itemsDestacados = menuItems.filter(
-                        (element) => element.destacado === true
+                        (element) => element.destacados === true
                     )
                     setMenu(itemsDestacados)
                 }
@@ -52,7 +53,18 @@ export const MenuList = ({ category }) => {
 
     return(
         <section id='menu'>
-            <Row className="p-5 justify-content-center">
+            <Row className="p-5 gx-0 justify-content-center">
+            <div className="menuTextContainer">
+                <h4>MENÚ <Line /></h4>
+                {category === 'bebidas'? <h3>Nuestras<br/>{category}</h3> : <h3>Nuestros<br/>{category}</h3>}
+                <p> Conoce nuestras especialidades<br/><br/>para compartir con toda la familia</p>
+            </div>
+            <div className="menuTabs">
+                <button onClick={() => setCategory('destacados')}>{category === 'destacados'? <b>Destacados</b> : 'Destacados'}</button>
+                <button onClick={() => setCategory('platos')}>{category === 'platos'? <b>Platos</b> : 'Platos'}</button>
+                <button onClick={() => setCategory('postres')}>{category === 'postres'? <b>Postres</b> : 'Postres'}</button>
+                <button onClick={() => setCategory('bebidas')}>{category === 'bebidas'? <b>Bebidas</b> : 'Bebidas'}</button>
+            </div>
             {
             loading ? (
                 <Loader/>
