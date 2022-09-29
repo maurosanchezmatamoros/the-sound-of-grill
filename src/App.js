@@ -1,23 +1,28 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { Home, MenuBebidas, MenuDestacados, MenuPlatos, MenuPostres, Reserva } from './pages/'
 
 //Bootstrap
 import 'bootstrap/dist/css/bootstrap.css'
+import { Home } from './Home';
+import { Reserva } from './components';
+import { useState, createContext } from 'react';
+
+export const categoryContext = createContext()
 
 function App() {
+
+  const [category, setCategory] = useState('destacados')
+
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/menuBebidas' element={<MenuBebidas />} />
-          <Route path='/menuDestacados' element={<MenuDestacados />} />
-          <Route path='/menuPlatos' element={<MenuPlatos />} />
-          <Route path='/menuPostres' element={<MenuPostres />} />
-          <Route path='/reserva' element={<Reserva />} />
-          <Route path='*' element={<h1>Page not found</h1>} />
-        </Routes>
-      </BrowserRouter>
+      <categoryContext.Provider value={{ category, setCategory }}>
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/reserva' element={<Reserva />} />
+            <Route path='*' element={<h1>Page not found</h1>} />
+          </Routes>
+        </BrowserRouter>
+      </categoryContext.Provider>
     </>
   );
 }
