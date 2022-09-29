@@ -1,10 +1,7 @@
 import { Container, Row, Col } from 'react-bootstrap'
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import Swal from "sweetalert2"
-
-//styles
 import "../styles/Footer.css"
-//icons
 import { MdMailOutline, MdCall, MdLocationOn } from "react-icons/md"
 /* import { ReactComponent as Logo } from "../../public/assets/svg/logo_footer.svg" */
 import LogoFooter from './icons/LogoFooter';
