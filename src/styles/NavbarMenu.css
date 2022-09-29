@@ -73,3 +73,25 @@
 .dropMenu li:hover{
     opacity: 0.8;
 }
+
+.hamburgerMenuIcon{
+    display: none;
+    margin: 0 1rem;
+}
+
+.hamburgerMenuIcon:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 760px){
+    .menu{
+        display: none;
+    }
+    .navbarMenu{
+        justify-content: center;
+    }
+    .hamburgerMenuIcon{
+        display: block;
+    }
+}
