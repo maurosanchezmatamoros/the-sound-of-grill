@@ -8,4 +8,5 @@ export { Item } from "./Item"
 export { Loader } from "./Loader"
 export { MenuList } from "./MenuList"
 export { Reserva } from "./Reserva"
+export { NavbarMobile } from "./NavbarMobile"
 
