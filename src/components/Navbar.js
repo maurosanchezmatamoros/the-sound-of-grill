@@ -41,6 +41,7 @@ export const Navbar = () => {
     const [show, setShow] = useState(false);
 
     return(
+    <>
         <nav>
             <div className={navbarBack? "navbarMenu navbarBack" : "navbarMenu"}>
                 <Link to='inicio' spy={true} smooth={true} offset={-60} duration={100}>
