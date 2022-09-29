@@ -21,7 +21,7 @@ export const Navbar = () => {
     }
 
     window.addEventListener("scroll", handleScroll)
-      
+    
     const handleOnClick = (cat) => {
         setCategory(cat)
         setDisplayMenu(!displayMenu)
@@ -61,7 +61,7 @@ export const Navbar = () => {
                     </li>
                     <Link to="conocenos" spy={true} smooth={true} offset={-50} duration={200} ><li className="menuItem">Conocenos</li></Link>
                     <Link to="contacto" spy={true} smooth={true} offset={-50} duration={200} ><li className="menuItem">Contacto</li></Link>
-                    <li className="menuItem reservar">RESERVAR</li>
+                    <li className="menuItem reservar" onClick={handleShow}>RESERVAR</li>
                 </ul>
             </div>
             <NavbarMobile
@@ -72,6 +72,6 @@ export const Navbar = () => {
             handleOnClick={handleOnClick} />
         </nav>
         <ModalReserva isOpen={show} close={handleClose}/>
-      </>
+    </>
     )
 }
