@@ -44,11 +44,11 @@ dl {
 }
 dt { 
     width: auto;
-    min-width: 50%;
     max-width: 60%;
     float: left;
     overflow: hidden; 
-    white-space: nowrap 
+    white-space: nowrap;
+    word-wrap: break-word;
 }
 
 
@@ -56,6 +56,8 @@ dd {
     width: auto;
     float: left;  
     overflow: hidden;
+    word-wrap: break-word;
+    max-width: 40%;
 }
 
 dt:after { 

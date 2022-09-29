@@ -3,7 +3,6 @@ import "../styles/Modal.css"
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import Swal from "sweetalert2"
 import { MdSchedule, MdCall, MdLocationOn } from "react-icons/md"
-import { hover } from '@testing-library/user-event/dist/hover';
 
 export const ModalReserva = ({isOpen,close}) => {
  
