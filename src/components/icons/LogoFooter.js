@@ -1,7 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 25.4.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="logo_nuevo01" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-	 y="0px" viewBox="0 0 295.6 86.6" style="enable-background:new 0 0 295.6 86.6;" xml:space="preserve">
+const LogoFooter = (props) => (
+<svg 
+    version="1.1" 
+    id="logofooter" 
+    xmlns="http://www.w3.org/2000/svg" 
+    x="0px"
+	y="0px"
+    fill='none' 
+    viewBox="0 0 295.6 86.6"
+    {...props}>
 <g>
 	<g>
 		<path d="M14.3,21.3c-0.1,0.1-0.2,0.1-0.4,0.2c0.1-0.2,0.2-0.4,0.3-0.6V21C14.3,21.1,14.3,21.2,14.3,21.3z"/>
@@ -103,6 +109,11 @@
 		c0.9-0.4,1.6-1.1,2.2-1.8c0.6-0.8,1.1-1.7,1.5-2.7H273.5z"/>
 	<path d="M295.6,68.1l-2.1,6.7h-18.2v-0.4h0.6c0.7,0,1.2-0.2,1.7-0.7c0.4-0.5,0.7-1,0.7-1.6V52c0-0.7-0.3-1.2-0.8-1.6
 		c-0.5-0.4-1-0.7-1.7-0.7h-0.5v-0.4h9.8v0.4h-0.5c-0.7,0-1.3,0.2-1.7,0.7c-0.5,0.4-0.7,1-0.7,1.6v21.3h6c1.3,0,2.4-0.2,3.3-0.7
-		s1.6-1.1,2.2-1.8c0.6-0.8,1.1-1.7,1.4-2.7H295.6z"/>
+		s1.6-1.1,2.2-1.8c0.6-0.8,1.1-1.7,1.4-2.7H295.6z"
+        fill={props.fill}/>
 </g>
-</svg>
+
+    </ svg>
+)
+    
+export default LogoFooter

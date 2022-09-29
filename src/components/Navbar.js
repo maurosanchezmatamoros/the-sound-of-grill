@@ -3,6 +3,7 @@ import '../styles/NavbarMenu.css'
 import { useContext, useState } from "react"
 import { Link } from 'react-scroll'
 import { categoryContext } from "../App"
+import { ModalReserva } from "./Modal"
 
 export const Navbar = () => {
 
@@ -18,13 +19,21 @@ export const Navbar = () => {
     }
 
     window.addEventListener("scroll", handleScroll)
-
+      
     const handleOnClick = (cat) => {
         setCategory(cat)
         setDisplayMenu(!displayMenu)
     }
 
+    
+    const handleShow = () => {setNavbarBack(false); setShow(true) };
+    const handleClose = () => {setShow(false); setTimeout(() => {
+        setNavbarBack(true)
+    }, 200)};
+    const [show, setShow] = useState(false);
+
     return(
+      <>
         <nav className={navbarBack? "navbarMenu navbarBack" : "navbarMenu"}>
             <Link to='inicio' spy={true} smooth={true} offset={-60} duration={100}>
                 <TheSoundOfGrill fill={'#fff'} id='logoHome'/>
@@ -42,8 +51,11 @@ export const Navbar = () => {
                 </li>
                 <Link to="conocenos" spy={true} smooth={true} offset={-50} duration={200} ><li className="menuItem">Conocenos</li></Link>
                 <Link to="contacto" spy={true} smooth={true} offset={-50} duration={200} ><li className="menuItem">Contacto</li></Link>
-                <li className="menuItem reservar">RESERVAR</li>
+                <li className="menuItem reservar" onClick={handleShow}>RESERVAR</li>
             </ul>
+            
         </nav>
+        <ModalReserva isOpen={show} close={handleClose}/>
+      </>
     )
 }
