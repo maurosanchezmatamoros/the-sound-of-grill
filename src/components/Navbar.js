@@ -26,8 +26,10 @@ export const Navbar = () => {
     }
 
     
-    const handleShow = () => setShow(true);
-    const handleClose = () => setShow(false);
+    const handleShow = () => {setNavbarBack(false); setShow(true) };
+    const handleClose = () => {setShow(false); setTimeout(() => {
+        setNavbarBack(true)
+    }, 200)};
     const [show, setShow] = useState(false);
 
     return(
