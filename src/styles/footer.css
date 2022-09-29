@@ -1,5 +1,5 @@
 .footer {
-    font-family: Poppins;
+    font-family: 'Poppins';
     font-size: 16px;
     font-weight: 400;
     line-height: 29px;
@@ -78,7 +78,7 @@ dt:after {
     position: relative;
 
 }
-  
+
 .hovertext:before {
     content: attr(data-hover);
     visibility: hidden;
@@ -96,7 +96,7 @@ dt:after {
     left: 30%;
     top:140%;
 }
-  
+
 .hovertext:hover:before {
     opacity: 1;
     visibility: visible;
