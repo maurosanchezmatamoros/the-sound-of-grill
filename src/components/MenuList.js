@@ -53,29 +53,29 @@ export const MenuList = ({ category, setCategory }) => {
 
     return(
         <section id='menu'>
-            <Row className="p-5 gx-0 justify-content-center">
-            <div className="menuTextContainer">
-                <h4>MENÚ <Line /></h4>
-                {category === 'bebidas'? <h3>Nuestras<br/>{category}</h3> : <h3>Nuestros<br/>{category}</h3>}
-                <p> Conoce nuestras especialidades<br/><br/>para compartir con toda la familia</p>
-            </div>
-            <div className="menuTabs">
-                <button onClick={() => setCategory('destacados')}>{category === 'destacados'? <b>Destacados</b> : 'Destacados'}</button>
-                <button onClick={() => setCategory('platos')}>{category === 'platos'? <b>Platos</b> : 'Platos'}</button>
-                <button onClick={() => setCategory('postres')}>{category === 'postres'? <b>Postres</b> : 'Postres'}</button>
-                <button onClick={() => setCategory('bebidas')}>{category === 'bebidas'? <b>Bebidas</b> : 'Bebidas'}</button>
-            </div>
-            {
-            loading ? (
-                <Loader/>
-            ) : (
-                error ? (
-                    <h1>We're sorry, something went wrong...</h1>
+            <Row className="p-2 p-md-5 gx-0 justify-content-center">
+                <div className="menuTextContainer px-2 px-md-6 px-lg-6 d-flex flex-wrap">
+                    <h4>MENÚ <Line /></h4>
+                    {category === 'bebidas'? <h3>Nuestras<br/>{category}</h3> : <h3>Nuestros<br/>{category}</h3>}
+                    <p> Conoce nuestras especialidades<br/><br/>para compartir con toda la familia</p>
+                </div>
+                <div className="menuTabs px-2 px-md-6 px-lg-6">
+                    <button onClick={() => setCategory('destacados')}>{category === 'destacados'? <b>Destacados</b> : 'Destacados'}</button>
+                    <button onClick={() => setCategory('platos')}>{category === 'platos'? <b>Platos</b> : 'Platos'}</button>
+                    <button onClick={() => setCategory('postres')}>{category === 'postres'? <b>Postres</b> : 'Postres'}</button>
+                    <button onClick={() => setCategory('bebidas')}>{category === 'bebidas'? <b>Bebidas</b> : 'Bebidas'}</button>
+                </div>
+                {
+                loading ? (
+                    <Loader/>
                 ) : (
-                    <MenuItemList menu={menu}/>
+                    error ? (
+                        <h1>We're sorry, something went wrong...</h1>
+                    ) : (
+                        <MenuItemList menu={menu}/>
+                    )
                 )
-            )
-            }
+                }
             </Row>
         </section>
     )
