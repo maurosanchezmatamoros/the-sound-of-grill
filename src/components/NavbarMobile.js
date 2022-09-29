@@ -1,7 +1,13 @@
 import { Link } from 'react-scroll'
 import '../styles/NavbarMobile.css'
 
-export const NavbarMobile = ({ collapseMenu, setCollapseMenu, displayMenu, setDisplayMenu, handleOnClick }) => {
+export const NavbarMobile = ({ collapseMenu, setCollapseMenu, displayMenu, setDisplayMenu, handleOnClick, handleShow }) => {
+
+    const handleOnClickReserva = () => {
+        setCollapseMenu(false)
+        handleShow()
+    }
+
     return(
         <ul className={collapseMenu === false? 'menuMobileHidden' : 'menuMobile'}>
             <Link to="inicio" spy={true} smooth={true} offset={-50} duration={200} onClick={() => setCollapseMenu(false)}><li className="menuItemMobile">Inicio</li></Link>
@@ -17,7 +23,7 @@ export const NavbarMobile = ({ collapseMenu, setCollapseMenu, displayMenu, setDi
             <Link to="conocenos" spy={true} smooth={true} offset={-50} duration={200} ><li className="menuItemMobile" onClick={() => setCollapseMenu(false)}>Conocenos</li></Link>
             <Link to="contacto" spy={true} smooth={true} offset={-50} duration={200} ><li className="menuItemMobile" onClick={() => setCollapseMenu(false)}>Contacto</li></Link>
             <div className="menuItemMobile">
-                <li className="reservarMobile" onClick={() => setCollapseMenu(false)}>RESERVAR</li>
+                <li className="reservarMobile" onClick={handleOnClickReserva}>RESERVAR</li>
             </div>
         </ul>
     )

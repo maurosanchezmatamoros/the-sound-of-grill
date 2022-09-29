@@ -69,7 +69,8 @@ export const Navbar = () => {
             setCollapseMenu={setCollapseMenu}
             displayMenu={displayMenu}
             setDisplayMenu={setDisplayMenu}
-            handleOnClick={handleOnClick} />
+            handleOnClick={handleOnClick}
+            handleShow={handleShow} />
         </nav>
         <ModalReserva isOpen={show} close={handleClose}/>
     </>
