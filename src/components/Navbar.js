@@ -4,6 +4,7 @@ import { useContext, useState } from "react"
 import { Link } from 'react-scroll'
 import { categoryContext } from "../App"
 import { NavbarMobile } from "./index"
+import { ModalReserva } from "./Modal"
 
 export const Navbar = () => {
 
@@ -20,7 +21,7 @@ export const Navbar = () => {
     }
 
     window.addEventListener("scroll", handleScroll)
-
+      
     const handleOnClick = (cat) => {
         setCategory(cat)
         setDisplayMenu(!displayMenu)
@@ -31,6 +32,13 @@ export const Navbar = () => {
         setCollapseMenu(!collapseMenu)
         if (navbarBack === false) setNavbarBack(true)
     }
+
+    
+    const handleShow = () => {setNavbarBack(false); setShow(true) };
+    const handleClose = () => {setShow(false); setTimeout(() => {
+        setNavbarBack(true)
+    }, 200)};
+    const [show, setShow] = useState(false);
 
     return(
         <nav>
@@ -62,5 +70,7 @@ export const Navbar = () => {
             setDisplayMenu={setDisplayMenu}
             handleOnClick={handleOnClick} />
         </nav>
+        <ModalReserva isOpen={show} close={handleClose}/>
+      </>
     )
 }

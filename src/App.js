@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 //Bootstrap
 import 'bootstrap/dist/css/bootstrap.css'
 import { Home } from './Home';
-import { Reserva } from './components/index';
+import { Reserva } from './components';
 import { useState, createContext } from 'react';
 
 export const categoryContext = createContext()
