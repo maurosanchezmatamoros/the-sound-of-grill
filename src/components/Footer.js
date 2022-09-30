@@ -18,12 +18,12 @@ export const Footer = () => {
                             <LogoFooter className='logo'/>
                         </div>
                         <p className="text-start">Los mejores cortes de carne y los mojitos más deliciosos de todo Tepoztlán.</p>
-                        <button onClick={window.open("https://www.facebook.com/people/SOUND-of-GRILL/100076328047439/")}>
+                        <button onClick={ () => window.open("https://www.facebook.com/people/SOUND-of-GRILL/100076328047439/")}>
                             <span className='me-2'>
-                                <LogoFacebook/>https://www.facebook.com/people/SOUND-of-GRILL/100076328047439/
+                                <LogoFacebook/>
                             </span>
                         </button>
-                        <button onClick={window.open("https://www.instagram.com/the.sound.of.grill/")}>
+                        <button onClick={() => window.open("https://www.instagram.com/the.sound.of.grill/")}>
                             <span className='me-2'>
                                 <LogoInstagram/>
                             </span>
