@@ -13,7 +13,7 @@ export const Menu = () => {
         <>
             <section className='menuSection' id='nuestroMenu'>
                 <div className='menuSectionContent'>
-                    <div className='menuHeader'>
+                    <div className='menuHeader px-sm-5 px-md-3 px-lg-1'>
                         <div className='menuHeaderTitle'>
                             <h4>MENÚ <Line /></h4>
                             <h3>Nuestro<br/>menu</h3>
@@ -31,7 +31,7 @@ export const Menu = () => {
                                 <button onClick={() => setCategory('postres')} className='menuCardsButton'>postres</button>
                             </Link>
                         </div>
-                        <div className='menuCards' style={{ backgroundImage: `url(/assets/images/bebidas.jpg)` }}>
+                        <div className='menuCards' style={{ backgroundImage: `url(/assets/images/bebidas.png)` }}>
                             <Link to='menu' spy={true} smooth={true} offset={-60} duration={100} >
                                 <button onClick={() => setCategory('bebidas')} className='menuCardsButton'>bebidas</button>
                             </Link>
