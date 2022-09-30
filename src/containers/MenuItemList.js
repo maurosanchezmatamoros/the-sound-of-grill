@@ -1,14 +1,15 @@
 import { Item, Loader } from '../components'
+import { Row, Col } from 'react-bootstrap'
 
 
 const MenuItemList = ({menu}) => { 
 
     return (
-                <div className="gridMenu justify-content-start justify-content-md-between px-2 px-sm-5 px-md-6 px-lg-6">
+                <div className="cardContainer justify-content-center justify-content-sm-between gx-0">
                     {
                         menu.length > 0 ?
                             menu.map((card) => (
-                                    <Item item={card} key={card.id}/>
+                                        <Item item={card} key={card.id}/>
                             )) : (
                                 <Loader />
                             )

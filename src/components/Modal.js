@@ -47,7 +47,7 @@ export const ModalReserva = ({isOpen,close}) => {
                                     </Col>
                                     <Col xs={12} md={6}>
                                         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1" md={4}>
-                                            <Form.Label>Personas</Form.Label>
+                                            <Form.Label>Cantidad de Personas</Form.Label>
                                             <Form.Control
                                                 type="number"
                                                 placeholder=""
@@ -76,7 +76,6 @@ export const ModalReserva = ({isOpen,close}) => {
                                                 <option>17:00</option>
                                                 <option>18:00</option>
                                                 <option>19:00</option>
-                                                <option>20:00</option>
                                             </Form.Select>
                                         </Form.Group>
                                     </Col>
@@ -110,7 +109,7 @@ export const ModalReserva = ({isOpen,close}) => {
                             <div >
                                 <h5><MdLocationOn size={18}/> DIRECCIÓN</h5>
                                 <button onClick={() => window.open("https://www.google.com/maps?ll=18.989144,-99.100842&z=15&t=m&hl=es-419&gl=AR&mapclient=embed&cid=4151280849964126201")}>
-                                    <span data-hover="Ir a Maps" className="hovertext">62520, Del Tepozteco 25, Tepoztlán, México..</span>
+                                    <span data-hover="Ir a Maps" className="hovertext">62520, Del Tepozteco 25, Tepoztlán, México.</span>
                                 </button>
                             </div>
                             <div className='mt-4'>
