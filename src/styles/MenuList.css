@@ -1,27 +1,12 @@
-@media (min-width: 769px) { 
-    .px-md-6{
-    padding-right: 4rem !important;
-    padding-left: 4rem !important;
-    } 
-}
-
-@media (min-width: 991.98px) { 
-    .px-lg-6{
-    padding-right: 5rem !important;
-    padding-left: 5rem !important;
-    }
-}
-
 section{
     background: #E9E9E9;
 }
 
+.menuContainer{
+    padding: 3rem 3rem;
+}
+
 .menuTextContainer{
-    /* display: grid;
-    grid-template-areas:
-    'title null'
-    'subtitle text'; */
-    
     justify-content: space-between;
     width: 100%;
 }
@@ -30,17 +15,13 @@ section{
     color: rgba(204, 157, 47, 1);
     font-size: 14px;
     letter-spacing: 2px;
-    /* display: flex;
-    align-items: center;
-    grid-area: title; */
 }
 
 .menuTextContainer h3{
     font-family: 'Cinzel';
-    font-size: 50px;
+    font-size: 40px;
     color: #1C1C1C;
     margin-bottom: 2rem;
-    /* grid-area: subtitle; */
     line-height: 1;
 }
 
@@ -50,7 +31,6 @@ section{
     font-family: 'Poppins';
     font-size: 16px;
     color: #777777;
-    /* grid-area: text; */
     line-height: 16px;
 }
 
@@ -61,4 +41,42 @@ section{
     background: none;
     margin: 0 1rem 1rem 0;
     font-family: 'Poppins';
+}
+
+.descargarMenu{
+    background-color: #CC9D2F;
+    color: #FFF;
+    font-size: 16px;
+    width: 163px;
+    height: 40px;
+    border: none;
+    letter-spacing: 0.08em;
+}
+
+.descargarMenu:hover{
+    opacity: 0.8;
+}
+
+@media (min-width: 576px) { 
+    .menuContainer{
+        padding: 4rem 4rem;
+    }
+}
+
+@media (min-width: 769px) { 
+    .menuTextContainer h3{
+        font-size: 50px;
+    }
+    .menuContainer{
+        padding: 5rem 5rem;
+    }
+}
+
+@media (min-width: 991.98px) { 
+    .menuTextContainer h3{
+        font-size: 50px;
+    }
+    .menuContainer{
+        padding: 10rem 10rem;
+    }
 }

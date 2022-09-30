@@ -53,17 +53,17 @@ export const MenuList = ({ category, setCategory }) => {
 
     return(
         <section id='menu'>
-            <Row className="p-4 py-5 px-lg-6 gx-0 justify-content-center">
-                <Row className="menuTextContainer px-3 px-sm-5 px-md-6 px-lg-6 gx-0">
+            <Row className="menuContainer gx-0 justify-content-center">
+                <Row className="menuTextContainer gx-0">
                     <Col md={4} lg={6}>
                         <h4>MENÚ <Line /></h4>
                         {category === 'bebidas'? <h3>Nuestras<br/>{category}</h3> : <h3>Nuestros<br/>{category}</h3>}
                     </Col>
-                    <Col md={4} lg={6} className="text-start text-md-end mb-4">
+                    <Col md={4} lg={6} className="text-start text-md-end">
                         <p> Conoce nuestras especialidades<br/><br/>para compartir con toda la familia</p>
                     </Col>
                 </Row>
-                <div className="menuTabs px-3 px-sm-5 px-md-6 px-lg-6">
+                <div className="menuTabs mt-4">
                     <button onClick={() => setCategory('destacados')}>{category === 'destacados'? <b>Destacados</b> : 'Destacados'}</button>
                     <button onClick={() => setCategory('platos')}>{category === 'platos'? <b>Platos</b> : 'Platos'}</button>
                     <button onClick={() => setCategory('postres')}>{category === 'postres'? <b>Postres</b> : 'Postres'}</button>
@@ -80,6 +80,7 @@ export const MenuList = ({ category, setCategory }) => {
                     )
                 )
                 }
+                <button className="mt-5 descargarMenu">DESCARGAR MENÚ</button>
             </Row>
         </section>
     )
