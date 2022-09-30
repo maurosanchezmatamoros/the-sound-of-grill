@@ -3,7 +3,8 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 import Swal from "sweetalert2"
 import "../styles/Footer.css"
 import { MdMailOutline, MdCall, MdLocationOn } from "react-icons/md"
-/* import { ReactComponent as Logo } from "../../public/assets/svg/logo_footer.svg" */
+import { ReactComponent as LogoFacebook } from "./icons/sog_facebook.svg"
+import { ReactComponent as LogoInstagram} from "./icons/sog_instagram.svg"
 import LogoFooter from './icons/LogoFooter';
 
 export const Footer = () => {
@@ -16,12 +17,22 @@ export const Footer = () => {
                         <div >
                             <LogoFooter className='logo'/>
                         </div>
-                        <p className="text-center text-md-start">Los mejores cortes de carne y los mojitos más deliciosos de todo Tepoztlán.</p>
+                        <p className="text-start">Los mejores cortes de carne y los mojitos más deliciosos de todo Tepoztlán.</p>
+                        <button onClick={ () => window.open("https://www.facebook.com/people/SOUND-of-GRILL/100076328047439/")}>
+                            <span className='me-2'>
+                                <LogoFacebook/>
+                            </span>
+                        </button>
+                        <button onClick={() => window.open("https://www.instagram.com/the.sound.of.grill/")}>
+                            <span className='me-2'>
+                                <LogoInstagram/>
+                            </span>
+                        </button>
                     </Col>
                     <Col md={4} sm={12} className="footer-section2 px-3 px-md-4 py-4">
                         <div className="d-flex justify-content-md-center">
                             <div>
-                                <h3 className="text-light">CONTACTO</h3>
+                                <h5 className="text-light mb-4">CONTACTO</h5>
                                 <div>
                                     <button className='text-start'>
                                         <CopyToClipboard
@@ -53,7 +64,7 @@ export const Footer = () => {
                     <Col md={4} sm={12} className="footer-section3 px-3 px-md-4 py-4">
                         <div className="">
                             <div>
-                                <h3 className="text-light">HORARIO</h3>
+                                <h5 className="text-light mb-4">HORARIO</h5>
                                 <Row className='d-flex justify-content-between'>
                                     <dl>
                                         <dt>Jueves </dt>

@@ -1,7 +1,7 @@
 import { useEffect, useState} from "react"
 import { Loader } from "."
 import MenuItemList from "../containers/MenuItemList"
-import { Row } from 'react-bootstrap'
+import { Row, Col } from 'react-bootstrap'
 import { menuItems } from "../data/menuItems"
 import Swal from "sweetalert2"
 import "../styles/MenuList.css"
@@ -53,29 +53,33 @@ export const MenuList = ({ category, setCategory }) => {
 
     return(
         <section id='menu'>
-            <Row className="p-5 gx-0 justify-content-center">
-            <div className="menuTextContainer">
-                <h4>MENÚ <Line /></h4>
-                {category === 'bebidas'? <h3>Nuestras<br/>{category}</h3> : <h3>Nuestros<br/>{category}</h3>}
-                <p> Conoce nuestras especialidades<br/><br/>para compartir con toda la familia</p>
-            </div>
-            <div className="menuTabs">
-                <button onClick={() => setCategory('destacados')}>{category === 'destacados'? <b>Destacados</b> : 'Destacados'}</button>
-                <button onClick={() => setCategory('platos')}>{category === 'platos'? <b>Platos</b> : 'Platos'}</button>
-                <button onClick={() => setCategory('postres')}>{category === 'postres'? <b>Postres</b> : 'Postres'}</button>
-                <button onClick={() => setCategory('bebidas')}>{category === 'bebidas'? <b>Bebidas</b> : 'Bebidas'}</button>
-            </div>
-            {
-            loading ? (
-                <Loader/>
-            ) : (
-                error ? (
-                    <h1>We're sorry, something went wrong...</h1>
+            <Row className="p-4 py-5 px-lg-6 gx-0 justify-content-center">
+                <Row className="menuTextContainer px-3 px-sm-5 px-md-6 px-lg-6 gx-0">
+                    <Col md={4} lg={6}>
+                        <h4>MENÚ <Line /></h4>
+                        {category === 'bebidas'? <h3>Nuestras<br/>{category}</h3> : <h3>Nuestros<br/>{category}</h3>}
+                    </Col>
+                    <Col md={4} lg={6} className="text-start text-md-end mb-4">
+                        <p> Conoce nuestras especialidades<br/><br/>para compartir con toda la familia</p>
+                    </Col>
+                </Row>
+                <div className="menuTabs px-3 px-sm-5 px-md-6 px-lg-6">
+                    <button onClick={() => setCategory('destacados')}>{category === 'destacados'? <b>Destacados</b> : 'Destacados'}</button>
+                    <button onClick={() => setCategory('platos')}>{category === 'platos'? <b>Platos</b> : 'Platos'}</button>
+                    <button onClick={() => setCategory('postres')}>{category === 'postres'? <b>Postres</b> : 'Postres'}</button>
+                    <button onClick={() => setCategory('bebidas')}>{category === 'bebidas'? <b>Bebidas</b> : 'Bebidas'}</button>
+                </div>
+                {
+                loading ? (
+                    <Loader/>
                 ) : (
-                    <MenuItemList menu={menu}/>
+                    error ? (
+                        <h1>We're sorry, something went wrong...</h1>
+                    ) : (
+                        <MenuItemList menu={menu}/>
+                    )
                 )
-            )
-            }
+                }
             </Row>
         </section>
     )

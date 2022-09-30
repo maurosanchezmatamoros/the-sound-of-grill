@@ -1,5 +1,15 @@
-.p-5{
-    padding: 10rem !important;
+@media (min-width: 769px) { 
+    .px-md-6{
+    padding-right: 4rem !important;
+    padding-left: 4rem !important;
+    } 
+}
+
+@media (min-width: 991.98px) { 
+    .px-lg-6{
+    padding-right: 5rem !important;
+    padding-left: 5rem !important;
+    }
 }
 
 section{
@@ -7,11 +17,11 @@ section{
 }
 
 .menuTextContainer{
-    display: grid;
+    /* display: grid;
     grid-template-areas:
     'title null'
-    'subtitle text';
-    align-items: center;
+    'subtitle text'; */
+    
     justify-content: space-between;
     width: 100%;
 }
@@ -20,17 +30,18 @@ section{
     color: rgba(204, 157, 47, 1);
     font-size: 14px;
     letter-spacing: 2px;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    grid-area: title;
+    grid-area: title; */
 }
 
 .menuTextContainer h3{
     font-family: 'Cinzel';
-    font-size: 56px;
+    font-size: 50px;
     color: #1C1C1C;
     margin-bottom: 2rem;
-    grid-area: subtitle;
+    /* grid-area: subtitle; */
+    line-height: 1;
 }
 
 .menuTextContainer p{
@@ -39,7 +50,7 @@ section{
     font-family: 'Poppins';
     font-size: 16px;
     color: #777777;
-    grid-area: text;
+    /* grid-area: text; */
     line-height: 16px;
 }
 
