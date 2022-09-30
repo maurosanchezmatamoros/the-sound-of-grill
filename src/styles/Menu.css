@@ -1,7 +1,6 @@
 .menuSection{
     margin: 0;
     padding: 0;
-    min-height: 1026px;
     width: 100%;
     display: flex;
     background-color: #1C1C1C;
@@ -56,7 +55,7 @@
 }
 
 .menuCards{
-    width: 30%;
+    width: 32%;
     max-width: 336px;
     height: 467px;
     border: none;
@@ -99,12 +98,42 @@
         align-items: flex-start;
     }
     .menuLinks{
-        flex-direction: column;
-        width: 100%;
+        width: 80%;
         padding-top: 2rem;
     }
     .menuCards{
-        width: 80%;
-        max-width: 500px;
+        max-width: 800px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .menuCards{
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .menuCards{
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .menuCards{
+        height: 275px;
+    }
+    .menuCards button{
+        width: 100px;
+        height: 35px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .menuLinks{
+        flex-direction: column;
+    }
+    .menuCards{
+        width: 100%;
     }
 }
