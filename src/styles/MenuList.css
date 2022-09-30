@@ -3,7 +3,7 @@ section{
 }
 
 .menuContainer{
-    padding: 3rem 3rem;
+    padding: 5rem 3rem;
 }
 
 .menuTextContainer{
@@ -59,7 +59,7 @@ section{
 
 @media (min-width: 576px) { 
     .menuContainer{
-        padding: 4rem 4rem;
+        padding: 5rem 4rem;
     }
 }
 
