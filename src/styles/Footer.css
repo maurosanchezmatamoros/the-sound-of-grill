@@ -8,6 +8,10 @@
     background-color: #1C1C1C;
 }
 
+.logo{
+    max-width: 90%;
+}
+
 .logo g{
     fill: #FFFFFF;
 }
@@ -105,3 +109,16 @@ dt:after {
     opacity: 1;
     visibility: visible;
 }
+
+/* .dot {
+    height: 40px;
+    width: 40px;
+    background-color: #777777;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot svg{
+    fill:#FFFFFF;
+    z-index: 3;
+} */
