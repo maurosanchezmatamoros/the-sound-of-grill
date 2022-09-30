@@ -12,7 +12,7 @@ export const Footer = () => {
     return (
         <>
             <Container fluid className="footer" id='contacto'>
-                <Row className="mx-3 px-2 py-3 mx-md-4 px-md-3 py-md-5 mx-lg-5 px-lg-4">
+                <Row className="mx-3 px-2 py-3 mx-md-4 px-md-3 py-md-5 mx-lg-5 px-lg-5">
                     <Col md={4} sm={12} className="footer-section1 px-3 px-md-4 py-4">
                         <div >
                             <LogoFooter className='logo'/>
@@ -81,14 +81,14 @@ export const Footer = () => {
                         </div>
                     </Col>
                 </Row>
-                <Row className="mx-3 px-2 py-3 mx-md-4 px-md-3 py-md-5 mx-lg-5 px-lg-4 footer-map">
+                <Row className="mx-3 px-2 py-3 mx-md-4 px-md-3 py-md-5 mx-lg-5 px-lg-5 footer-map">
                     <Col className="justify-content-center px-3 px-md-4">
                         <iframe className='w-100 h-100' title="maps-sog" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4543.572305580706!2d-99.10254159605253!3d18.98879462455438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce0df76ef765e3%3A0x399c4ff048fe4ff9!2sThe%20Sound%20of%20Grill!5e0!3m2!1ses-419!2sar!4v1662766869479!5m2!1ses-419!2sar"></iframe>
                     </Col>
                 </Row>
                 <Row className="footer-info">
                     <Row className="justify-content-center align-items-center">
-                        <p className="text-center">© 2022 The Sound of Grill - Diseño y Desarrollo</p>
+                        <p className='text-center'>© 2022 The Sound of Grill - <span><button style={{color:"#CC9D2F"}} onClick={() => window.open("https://linktr.ee/disenoydesarrollo")}>Diseño y Desarrollo</button></span></p>
                     </Row>
                 </Row>
             </Container>

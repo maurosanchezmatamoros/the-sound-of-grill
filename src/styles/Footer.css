@@ -33,7 +33,7 @@
 }
 
 .footer-info{
-    height: 50px;
+    height: 70px;
     color: #C6C6C6;
     font-size: 1rem;
     background-color: #161616;
@@ -41,6 +41,11 @@
 
 .footer-info p{
     margin: 0;
+}
+
+
+.footer-info button:hover{
+    opacity: 0.8;
 }
 
 dl { 
@@ -109,16 +114,3 @@ dt:after {
     opacity: 1;
     visibility: visible;
 }
-
-/* .dot {
-    height: 40px;
-    width: 40px;
-    background-color: #777777;
-    border-radius: 50%;
-    display: inline-block;
-}
-
-.dot svg{
-    fill:#FFFFFF;
-    z-index: 3;
-} */
