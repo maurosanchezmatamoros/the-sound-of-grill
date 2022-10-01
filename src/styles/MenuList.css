@@ -41,6 +41,11 @@ section{
     background: none;
     margin: 0 1rem 1rem 0;
     font-family: 'Poppins';
+    font-weight: 500;
+}
+
+.menuTabs button b{
+    font-weight: 700;
 }
 
 .descargarMenu{
@@ -86,12 +91,20 @@ section{
     .menuTextContainer h3{
         font-size: 50px;
     }
-    
+
     .menuContainer{
         padding: 10rem 10rem;
     }
 
     .descargarMenu{
         max-width: 250px;
+    }
+
+    .menuTabs button{
+        font-weight: 400;
+    }
+
+    .menuTabs button b{
+        font-weight: 600;
     }
 }
