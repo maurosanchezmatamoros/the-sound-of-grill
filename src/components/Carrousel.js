@@ -21,9 +21,9 @@ export const Carrousel = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                     <div className='carouselCommentContainer'>
-                        <h4>Dulce zuleima barona flores</h4>
+                        <h4>Dulce Zuleima Barona Flores</h4>
                         <h6>Hace 7 meses</h6>
-                        <p>los mejores mojitos de Tepoztlán, comida deliciosa, precios accesibles,excelente ubicación, a gusto para venir con la familia y echarte unos tragos.</p>
+                        <p>los mejores mojitos de Tepoztlán, comida deliciosa, precios accesibles, excelente ubicación, a gusto para venir con la familia y echarte unos tragos.</p>
                         <div>
                             <img src='/assets/svg/star.svg' alt='star'></img>
                             <img src='/assets/svg/star.svg' alt='star'></img>
