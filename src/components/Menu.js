@@ -13,7 +13,7 @@ export const Menu = () => {
         <>
             <section className='menuSection' id='nuestroMenu'>
                 <div className='menuSectionContent'>
-                    <div className='menuHeader px-sm-5 px-md-3 px-lg-1'>
+                    <div className='menuHeader px-md-3 px-lg-1'>
                         <div className='menuHeaderTitle'>
                             <h4>MENÚ <Line /></h4>
                             <h3>Nuestro<br/>menu</h3>
