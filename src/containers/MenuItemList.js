@@ -1,5 +1,4 @@
 import { Item, Loader } from '../components'
-import { Row, Col } from 'react-bootstrap'
 
 
 const MenuItemList = ({menu}) => { 
