@@ -1,6 +1,4 @@
 # THE SOUND OF GRILL                                                          
-<img width="350" src="./public/assets/svg/logo.svg">
-
 
 ## Intro
 
@@ -30,15 +28,15 @@ Considering it's a landing page, it was made with ReactJS to achieve a good perf
 ## Styling
 
 <b>CSS</b> 
-<b>Bootstrap</b> & <b>React-bootstrap</b>.
+<b>Bootstrap</b> & <b>React-bootstrap</b>. <br />
 <b>Sweetalert</b> & <b>React-icons</b>.
 
 
 # Collaborators
 
-<b>Asly Arias - UX/UI</b>. [Behance](https://www.behance.net/aslyariasosio)
-<b>Julieta Viscarra - UX/UI</b>. [Behance](https://www.behance.net/juliviscarra)
-<b>Mauro Sanchez Matamoros - Developer</b>. [Portfolio](https://www.maurosanchezmatamoros.com.ar/)
+<b>Asly Arias - UX/UI</b>. [Behance](https://www.behance.net/aslyariasosio) <br />
+<b>Julieta Viscarra - UX/UI</b>. [Behance](https://www.behance.net/juliviscarra) <br />
+<b>Mauro Sanchez Matamoros - Developer</b>. [Portfolio](https://www.maurosanchezmatamoros.com.ar/) <br />
 <b>Giuliano Giovanelli - Developer</b>. [Github](https://github.com/giulianogiova20/)
 
 
